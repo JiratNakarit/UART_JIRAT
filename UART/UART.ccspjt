@@ -1,0 +1,18 @@
+[PROJECT]
+Target=UART.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=UART.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[UART.c]
+Type=4
+[mru-list]
+1=UART.c
+[Units]
+Count=2
+1=PIC24_UART_INTERUPT_01
+2=EVENT_DRIVEN_CCS
+Link=1

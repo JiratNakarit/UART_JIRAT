@@ -1,0 +1,58 @@
+## SCL Builder Setup File: Do not edit!!
+
+## VERSION: 3.60.00.00
+## FORMAT:  v2.00.01
+## DEVICE:  PIC24FJ128GA010
+
+## PINREGACTIONS
+cyc
+No Repeat
+--
+&
+## ADVPINREGACTIONS
+--
+&
+--
+COND1
+Any
+
+
+
+
+
+
+--
+&
+## CLOCK
+&
+## STIMULUSFILE
+&
+## RESPONSEFILE
+&
+## ASYNCH
+Pin
+U1RXREG
+Direct Message
+
+"<0123456789>///<qwertyuiop>\\\\<asdfghjkl>&&"
+-1
+--
+Pin
+U1RXREG
+Direct Message
+
+"<qwertyuiop>
+-1
+--
+Pin
+U1RXREG
+Direct Message
+
+"<asdfghjkl>"
+-1
+--
+&
+## ADVANCEDSCL
+
+0
+&

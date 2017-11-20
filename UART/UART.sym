@@ -1,0 +1,226 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W1  @READ_ROM_MEMORY.P1
+W0 -W2  @MULFF48.P2
+W0 -W1  @DIV3232B.P3
+W0 -W3  @DIVFF64.P4
+W0 -W2  @DIVFF48.P5
+W0 -W1  @MULFF.P6
+W0 -W2  @MULS4848.P7
+W0 -W2  @DIVS4848.P8
+W0 -W1  @ADDFF.P9
+W0      @delay_us1.P10
+W0 -W1  @DIVFF.P11
+W0 -W1  @MUL3232.P12
+W0 -W3  @MULFF64.P13
+W0 -W2  @ADDFF48.P14
+W0 -W3  @SI64TOF64.P15
+W0 -W3  @MULS6464.P16
+W0 -W1  @MULS3232.P17
+W0 -W3  @ADDFF64.P18
+W0 -W3  @DIVS6464.P19
+W0      @SITOF.P20
+W0 -W1  @DIVS3232A.P21
+W0      @delay_ms1.P22
+W0 -W3  @SI64TOF48.P23
+W1      @SCRATCH
+W1      @WRITE_PACKED_MEMORY.P1
+W1      @READ_PACKED_MEMORY.P2
+W2 -W3  @DIVFF.P1
+W2 -W3  @MUL3232.P2
+W2 -W3  @DIV3232B.P3
+W2 -W3  @ADDFF.P4
+W2 -W3  @MULFF.P5
+W2      @READ_PACKED_MEMORY.P6
+W2 -W3  @MULS3232.P7
+W2      @WRITE_PACKED_MEMORY.P8
+W2      @READ_ROM_MEMORY.P9
+W2 -W3  @DIVS3232A.P10
+W3      @WRITE_PACKED_MEMORY.P1
+W3      @READ_PACKED_MEMORY.P2
+W3 -W5  @ADDFF48.P3
+W3 -W5  @MULFF48.P4
+W3 -W5  @MULS4848.P5
+W3 -W5  @DIVFF48.P6
+W3      @READ_ROM_MEMORY.P7
+W3 -W5  @DIVS4848.P8
+W4 -W7  @ADDFF64.P1
+W4 -W7  @MULS6464.P2
+W4 -W7  @DIVFF64.P3
+W4 -W7  @MULFF64.P4
+W4 -W7  @DIVS6464.P5
+085.4   TX1IF
+630.6   C1OUT
+630.7   C2OUT
+85A-85B strtok.save
+85C-85F _Randseed
+860-861 __DYNAMIC_HEAD
+862-863 EvQFullCount
+864-86D Tx1QCB
+86E-8ED Tx1QArray
+8EE-8EF Tx1BuffPtr
+8F0-8F1 TxBuffIdx
+8F2.0   Tx1Flag
+8F2.1   RDA1.FrameState
+8F4-8F5 Tx1FrameIn
+8F6-8F7 Tx1FrameOut
+8F8-8F9 Rx1FrameCount
+8FA-8FB RxCount
+8FC-8FD Tx1QFullCount
+8FE-8FF Rx1QFullCount
+900-901 RxBuffPtr
+902-90B Rx1QCB
+90C-91B Rx1BuffPtrArray
+91C-91D DestPtrStruct
+91E-91F MemFail
+920-921 MemCount
+922-985 position_x
+986-9E9 position_y
+9EA-9EB RDA1.FrmIdx
+9EC     main.errCode
+9ED     main.sendTx1Count
+9EE     main.c_state
+9EF     main.s_state
+9F0     main.sum_a
+9F1     main.sum_b
+9F2     main.sum_c
+9F3     main.pos_r
+9F4-9F5 main.posY
+9F6-9F7 main.posX
+9F8     main.Arr_state
+9F9     main.i
+A00-A01 SendTx1.strPtr
+A00-A01 QPtrXInit.qStructPtr
+A00-A01 QPtrXGet.qStructPtr
+A00-A01 Q8UXInit.qStructPtr
+A02-A03 QPtrXGet.destPtr
+A02-A03 QPtrXInit.buffPtr
+A02     SendTx1.strLn
+A02     ConvertStr2Int.num
+A02-A03 Q8UXInit.buffPtr
+A03     SendTx1.strIdx
+A04-A05 QPtrXInit.qL
+A04     SendTx1.qSpace
+A04-A05 Q8UXInit.qL
+A04-A05 QPtrXGet.errPtr
+A05     SendTx1.errCode
+A06     SendTx1.count
+A08-A09 Q8UXCount.qStructPtr
+A08-A09 strlen.s
+A0A-A0B strlen.sc
+A0A-A0B Q8UXPut.qStructPtr
+A0C     Q8UXPut.dataSource
+A0E-A0F Q8UXPut.errPtr
+A38     TBE1ISR.destChr
+A38     RDA1.Chr
+A39     TBE1ISR.errCode
+A3A-A3B Q8UXGet.qStructPtr
+A3A-A3B RDA1.errCode
+A3C-A3D Q8UXGet.destPtr
+A3E-A3F Q8UXGet.errPtr
+A42-A43 free.ptr
+A44-A45 free.node
+A44-A45 QPtrXPut.qStructPtr
+A46-A47 QPtrXPut.ptrStruct
+A46-A47 free.nsize
+A48-A49 QPtrXPut.errPtr
+A4A-A4B malloc.size
+A4C-A4D malloc.node
+A4E-A4F malloc.new
+A50-A51 malloc.nsize
+A56-A57 traverse.node
+A58-A59 traverse.temp
+A5A-A5B traverse.nsize
+A5C-A5D traverse.nextsize
+A5C-A5D insert_node_after.place
+A5E-A5F insert_node_after.node
+A66-A67 create_node.size
+A68-A69 create_node.ptr
+A6A-A6B create_node.result
+A6E-A6F remove_node.node
+A70-A71 remove_node.ptr
+A70-A71 update_node.node
+A72-A73 update_node.size
+2780-27FF Stack
+
+ROM Allocation:
+000DFC  QPtrXPut
+000E66  update_node
+000E76  remove_node
+000EA4  traverse
+000F22  free
+000F64  create_node
+000F88  insert_node_after
+000FBC  malloc
+00106E  RDA1
+001124  Q8UXGet
+001188  TBE1ISR
+0011CC  DisableIntr
+0011D6  HardwareInit
+0011F6  GlobalVarInit
+00120A  DynamicMemInit
+001236  QPtrXInit
+001274  Q8UXInit
+0012B2  UARTQueueInit
+0012D4  EnableIntr
+0012DC  QPtrXGet
+001346  strlen
+001368  ConvertStr2Int
+001372  Q8UXCount
+001382  Q8UXPut
+0013EE  SendTx1
+001458  @cinit1
+001458  main
+00151A  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    D:\[Work]\FRA341 Embedded\wk7\Week7 Material\UART\
+
+Project Files:
+    PIC24_UART_INTERUPT_01.c (link)                         [20-Nov-17 00:36  CRC=62E39FD6]
+    PIC24_UART_INTERUPT_01.H                                [13-Sep-17 03:49  CRC=D79E260C]
+    CONFIG_PIC24.H                                          [11-Nov-17 15:47  CRC=B3B3043D]
+    C:\Program Files (x86)\PICC\devices\24FJ48GA002.H       [12-Nov-13 14:36  CRC=2B092578]
+    C:\Program Files (x86)\PICC\drivers\stdlib.h            [08-Jun-11 14:39  CRC=0B6669CF]
+    C:\Program Files (x86)\PICC\drivers\stddef.h            [16-Jul-10 09:27  CRC=897CEC6C]
+    C:\Program Files (x86)\PICC\drivers\string.h            [14-Jul-11 10:13  CRC=23EDEC8F]
+    C:\Program Files (x86)\PICC\drivers\ctype.h             [03-Jan-08 13:55  CRC=2D1F019F]
+    C:\Program Files (x86)\PICC\drivers\stdio.h             [31-Jul-07 13:24  CRC=4E4534F4]
+    C:\Program Files (x86)\PICC\drivers\stdlibm.h           [24-Feb-12 09:58  CRC=9523303D]
+    C:\Program Files (x86)\PICC\drivers\memmgmt.c           [24-Feb-12 09:47  CRC=E82E24A3]
+    C:\Program Files (x86)\PICC\drivers\stdint.h            [30-Dec-08 09:01  CRC=9F7F640F]
+    BL_support.h                                            [05-Jan-17 12:12  CRC=F46A39C9]
+    CDATPIC24.h                                             [25-Jul-17 17:34  CRC=DDB9FE05]
+    EVENT_DRIVEN_CCS.H                                      [13-Sep-17 04:38  CRC=D110205B]
+    EVENT_TYPE_CCS.H                                        [12-Sep-17 20:59  CRC=AE2C727E]
+    EVENT_DRIVEN_CCS.c (link)                               [13-Sep-17 03:27  CRC=417CD95A]
+
+Source signature=3E9E9F3E
+
+Units:
+    D:\[Work]\FRA341 Embedded\wk7\Week7 Material\UART\PIC24_UART_INTERUPT_01.o
+    D:\[Work]\FRA341 Embedded\wk7\Week7 Material\UART\EVENT_DRIVEN_CCS.o
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+    Case Sensitive: Yes
+    ICD Provisions: Yes
+    Predefined symbols:
+       #define __PIC24FJ128GA010__ TRUE
+
+Output Files:
+    Errors:      UART.err
+    INHX8:       UART.hex
+    Symbols:     UART.sym
+    List:        UART.lst
+    Debug/COFF:  UART.cof
+    Project:     UART.ccspjt
+    Call Tree:   UART.tre
+    Statistics:  UART.STA

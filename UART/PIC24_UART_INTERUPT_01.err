@@ -1,0 +1,4 @@
+>>> Warning 202 "PIC24_UART_INTERUPT_01.c" Line 100(24,34): Variable never used:   Tx1BuffPtr
+>>> Warning 202 "PIC24_UART_INTERUPT_01.c" Line 103(36,47): Variable never used:   Tx1FrameOut
+D:\[Work]\FRA341 Embedded\wk7\Week7 Material\UART\PIC24_UART_INTERUPT_01.o ===>  0 Errors,  2 Warnings.
+Build Successful.
